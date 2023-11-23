@@ -33,15 +33,6 @@
         display: block;
         margin: 0 auto;
       }
-      /* Photo section in the first column */
-      section img {
-        grid-column: 1; /* Place in the first column */
-      }
-
-      /* About Me and Contact sections in the second column */
-      section:not(:has(img)) {
-        grid-column: 2; /* Place in the second column */
-      }
       footer {
         text-align: center;
         padding: 1em;
@@ -65,7 +56,17 @@
     <!-- About Me section in the second column -->
     <section>
       <h2>About Me</h2>
-      <p>Write a brief introduction about yourself here.</p>
+      <p>
+        I am a senior student in the dual degree program between Shanghai Jiao
+        Tong University and the University of Michigan, Ann Arbor, expecting to
+        graduate in 2024. I major in CS in University of Michigan and ECE in
+        Shanghai Jiao Tong University.
+      </p>
+      <p>
+        I have a keen interest in software development, with a particular focus
+        on backend development for large-scale web applications.
+      </p>
+      <p></p>
     </section>
 
     <!-- Contact section in the second column -->
@@ -79,6 +80,100 @@
         >
       </p>
       <!-- Add more contact information or links as needed -->
+    </section>
+
+    <section>
+      <h2>Research Experience</h2>
+
+      <div>
+        <h3>
+          University of Michigan, Computer Science and Engineering Department
+        </h3>
+        <p><strong>Paid Research Assistant</strong></p>
+        <p>
+          <strong>Supervisor:</strong>
+          <a href="https://web.eecs.umich.edu/~xwangsd/" target="_blank"
+            >Prof. Xinyu Wang</a
+          >
+        </p>
+        <p><strong>Location:</strong> Ann Arbor, Michigan, U.S.</p>
+        <p><strong>Start Date:</strong> May 10, 2023</p>
+        <p><strong>End Date:</strong> Present</p>
+
+        <ul>
+          <li>
+            Extended the functionality of <em>VeriEQL</em>, a tool for
+            <em>bounded equivalence verification</em> of complex SQL queries
+            with integrity constraints.
+          </li>
+          <li>
+            Implemented enhancements to VeriEQL, supporting advanced SQL
+            features such as <em>window functions</em> and
+            <em>correlated queries</em>.
+          </li>
+          <li>
+            Utilized a novel <em>SMT-based approach</em> to precisely model both
+            query semantics and integrity constraints using the
+            <em>theory of integers</em> with <em>uninterpreted functions</em>.
+          </li>
+          <li>
+            Enhanced VeriEQL to handle various integrity constraints, including
+            primary key, foreign key, NOT NULL, and value restrictions.
+          </li>
+          <li>
+            Identified and addressed bugs in real-world systems like MySQL and
+            Calcite using VeriEQL.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>University of Michigan, School of Nursing</h3>
+        <p><strong>Research Assistant</strong></p>
+        <p>
+          <strong>Supervisor:</strong>
+          <a
+            href="https://nursing.umich.edu/faculty-staff/faculty/ivo-d-dinov"
+            target="_blank"
+            >Prof. Ivo Dinov</a
+          >
+        </p>
+        <p><strong>Location:</strong> Ann Arbor, Michigan, U.S.</p>
+        <p><strong>Start Date:</strong> January 6, 2023</p>
+        <p><strong>End Date:</strong> Present</p>
+
+        <ul>
+          <li>
+            Contributed to the
+            <a href="https://socr.umich.edu/" target="_blank"
+              >Statistics Online Computational Resource (SOCR)</a
+            >, offering tools and computational protocols for study designs,
+            mathematical modeling, probability inference, statistical computing,
+            and artificial intelligence.
+          </li>
+          <li>
+            <strong>Refactored</strong> the codebase of the
+            <a
+              href="https://github.com/SOCR/ProbDistCalc_RShiny"
+              target="_blank"
+              >SOCR Probability Distribution Calculator/Modeler</a
+            >, an online tool for plotting and fitting probability distributions
+            written in R.
+          </li>
+          <li>
+            Reduced the size of the codebase by <strong>tenfold</strong>,
+            employing an <strong>object-oriented programming</strong> approach.
+          </li>
+          <li>
+            Extended the tool's capabilities to support approximately 20
+            additional probability distributions.
+          </li>
+          <li>
+            Revamped the tool's user interface with a fresh design, optimizing
+            for both functionality and aesthetics.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <footer>&copy; 2023 Bole Li</footer>
